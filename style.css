@@ -1,0 +1,272 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#player-1-panel,
+#player-2-panel {
+    text-align: center;
+    padding-top: 15vh;
+    height: 100vh;
+}
+
+#name-1,
+#name-2 {
+    text-transform: uppercase;
+    font-size: 5em;
+    font-weight: 100;
+}
+
+#globalScore1,
+#globalScore2 {
+    font-size: 15em;
+    font-weight: 100;
+    color: #f21616;
+}
+
+.active {
+    background: #ddd;
+    min-height: 100%;
+}
+
+.active h2::after {
+    content: "\2022";
+    font-size: 10rem;
+    position: absolute;
+    color: #f21616;
+    top: 10vh;
+    left: 32%;
+}
+
+.currentPanel {
+    position: relative;
+    margin: auto;
+    top: 10vh;
+    width: 200px;
+    height: 200px;
+    background: #f21616;
+    padding: 1vw;
+    font-size: 2em;
+    color: #fff;
+}
+
+#currentPanel>p {
+    font-size: 2em;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 50vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    position: absolute;
+    border: none;
+    background: none;
+}
+
+i {
+    margin-right: 1vw;
+    color: #f21616;
+}
+
+#newGameBtn {
+    top: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+}
+
+#rollBtn {
+    top: 70vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+}
+
+#holdBtn {
+    top: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+}
+
+
+/*MEDIAQUERIES*/
+
+@media screen and (min-width: 200px) and (max-width: 736px) {
+    * {
+        margin: 0;
+    }
+    #player-1-panel,
+    #player-2-panel {
+        text-align: center;
+        padding-top: 10vh;
+        height: 100vh;
+    }
+    #name-1,
+    #name-2 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+    #globalScore1,
+    #globalScore2 {
+        font-size: 2em;
+        font-weight: 100;
+        color: #f21616;
+    }
+    .active {
+        background: #ddd;
+    }
+    .active h2::after {
+        content: "\2022";
+        font-size: 3rem;
+        position: absolute;
+        color: #f21616;
+        left: 40%;
+        top: 7vh;
+    }
+    .currentPanel {
+        position: relative;
+        margin: auto;
+        top: 2vh;
+        width: 100px;
+        height: 100px;
+        background: #f21616;
+        padding: 1vw;
+        font-size: 1em;
+        color: #fff;
+    }
+    #currentPanel>p {
+        font-size: 1em;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        bottom: 50vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    button {
+        position: absolute;
+        border: none;
+        background: none;
+    }
+    i {
+        margin-right: 1vw;
+        color: #f21616;
+    }
+    #newGameBtn {
+        top: 1vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1em;
+    }
+    #rollBtn {
+        top: 80vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1em;
+    }
+    #holdBtn {
+        top: 90vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 737px) and (max-width: 1112px) {
+    * {
+        margin: 0;
+    }
+    #player-1-panel,
+    #player-2-panel {
+        text-align: center;
+        padding-top: 10vh;
+        height: 100vh;
+    }
+    #name-1,
+    #name-2 {
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: 100;
+    }
+    #globalScore1,
+    #globalScore2 {
+        font-size: 4em;
+        font-weight: 100;
+        color: #f21616;
+    }
+    .active {
+        background: #ddd;
+    }
+    .active h2::after {
+        content: "\2022";
+        font-size: 3rem;
+        position: absolute;
+        color: #f21616;
+        left: 35%;
+        top: 8vh;
+    }
+    .currentPanel {
+        position: relative;
+        margin: auto;
+        top: 2vh;
+        width: 150px;
+        height: 150px;
+        background: #f21616;
+        padding: 1vw;
+        font-size: 2em;
+        color: #fff;
+    }
+    #currentPanel>p {
+        font-size: 1em;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        bottom: 50vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    button {
+        position: absolute;
+        border: none;
+        background: none;
+    }
+    i {
+        margin-right: 1vw;
+        color: #f21616;
+    }
+    #newGameBtn {
+        top: 1vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2em;
+    }
+    #rollBtn {
+        top: 80vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2em;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+    #holdBtn {
+        top: 90vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2em;
+    }
+}
