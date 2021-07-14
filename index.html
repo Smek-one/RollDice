@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--MINE CSS-->
     <link rel="stylesheet" href="style.css">
     <!--BOOTSTRAP CSS-->
@@ -15,29 +15,28 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col active" id="player-1-panel">
+            <div class="col-lg-6 col-md-6 " id="player-1-panel">
                 <h2 id="name-1">Player 1</h2>
-                <p id="globalScore1">80</p>
-                <div class="currentPanel">
+                <p id="globalScore-1">80</p>
+                <div class="col-xs-2 currentPanel">
                     <p>Current</p>
-                    <p id="currentScore">0</p>
+                    <p id="currentScore-1">0</p>
                 </div>
             </div>
 
-            <div class="col" id="player-2-panel">
+            <div class="col-lg-6 col-md-6 active" id="player-2-panel">
                 <h2 id="name-2">Player 2</h2>
-                <p id="globalScore2">10</p>
-                <div class="currentPanel">
+                <p id="globalScore-2">10</p>
+                <div class="col-xs-2 currentPanel">
                     <p>Current</p>
-                    <p id="currentScore">0</p>
+                    <p id="currentScore-2">0</p>
                 </div>
             </div>
         </div>
         <img src="images/dice-five.png" alt="">
-
         <button id="newGameBtn"><i class="bi bi-plus-circle"></i>New Game</button>
-        <button id="rollBtn"><i class="bi bi-arrow-repeat"></i>Roll Dice</button>
-        <button id="holdBtn"><i class="bi bi-box-arrow-in-down"></i>Hold</button>
+        <button id="rollBtn"><i class="bi bi-arrow-repeat"></i>Roll dice</button>
+        <button id="holdBtn"><i class="bi bi-box-arrow-in-down"></i>HoldBtn</button>
     </div>
 
 
