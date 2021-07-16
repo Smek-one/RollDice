@@ -46,7 +46,7 @@
     .currentPanel {
         position: relative;
         margin: auto;
-        top: 8vh;
+        top:10vh;
         width: 150px;
         height: 150px;
         background: #f21616;
@@ -150,7 +150,7 @@
         .currentPanel {
             position: relative;
             margin: auto;
-            top: 10vh;
+            top: 15vh;
             width: 80px;
             height: 80px;
             background: #f21616;
