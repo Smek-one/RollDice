@@ -40,13 +40,13 @@
         content: "\2022";
         font-size: 5rem;
         color: #f21616;
-        float: inline-end;
+        float: end;
     }
     
     .currentPanel {
         position: relative;
         margin: auto;
-        top:10vh;
+        top: 10vh;
         width: 150px;
         height: 150px;
         background: #f21616;
