@@ -6,7 +6,6 @@ init();
 document.getElementById('rollBtn').addEventListener('click', function() {
     if (gamePlaying) {
         let randomDice = Math.floor(Math.random() * 6) + 1;
-        console.log(randomDice)
 
         //DISPLAY RESULT
         let displayDice = document.getElementById('dice');
@@ -22,25 +21,27 @@ document.getElementById('rollBtn').addEventListener('click', function() {
             nextPlayer();
         }
     }
-})
+});
 
 //HOLD SCORE
 document.querySelector('#holdBtn').addEventListener('click', function() {
     if (gamePlaying) {
         scores[activePlayer] += roundScore;
 
-        document.querySelector('#globalScore-' + activePlayer).textContent = scores[activePlayer];
+        document.getElementById('globalScore-' + activePlayer).textContent = scores[activePlayer];
     }
 
+    //CHECK IF THERE IS A WINNER
     if (scores[activePlayer] >= 100) {
         document.querySelector('#name-' + activePlayer).textContent = 'Winner !';
         document.querySelector('#dice').style.display = 'none';
         document.querySelector('#player-' + activePlayer + '-panel').classList.add('winner');
         document.querySelector('#player-' + activePlayer + '-panel').classList.remove('active');
+        gamePlaying = false;
     } else {
         nextPlayer();
     }
-})
+});
 
 //NEXT PLAYER
 function nextPlayer() {
@@ -54,7 +55,7 @@ function nextPlayer() {
     document.querySelector('#player-2-panel').classList.toggle('active');
 
     document.querySelector('#dice').style.display = 'none';
-}
+};
 
 
 
