@@ -1,6 +1,6 @@
-let scores, roundScore, activePlayer, gamePlaying;
+let gamePlaying, roundScore, activePlayer, scores;
 
-init();
+
 
 //ROLL DICE
 document.getElementById('rollBtn').addEventListener('click', function() {
@@ -24,11 +24,12 @@ document.getElementById('rollBtn').addEventListener('click', function() {
 });
 
 //HOLD SCORE
-document.querySelector('#holdBtn').addEventListener('click', function() {
+document.getElementById('holdBtn').addEventListener('click', function() {
     if (gamePlaying) {
         scores[activePlayer] += roundScore;
 
-        document.getElementById('globalScore-' + activePlayer).textContent = scores[activePlayer];
+        document.querySelector('#globalScore-' + activePlayer).textContent = scores[activePlayer];
+
     }
 
     //CHECK IF THERE IS A WINNER

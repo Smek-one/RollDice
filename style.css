@@ -150,16 +150,16 @@
         .currentPanel {
             position: relative;
             margin: auto;
-            top: 15vh;
-            width: 80px;
-            height: 80px;
+            top: 30vh;
+            width: 90px;
+            height: 90px;
             background: #f21616;
             padding: 1vw;
             font-size: 1em;
             color: #fff;
         }
         #currentPanel>p {
-            font-size: 1.5em;
+            font-size: 2em;
         }
         img {
             width: 80px;
@@ -182,13 +182,13 @@
             top: 2vh;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 1em;
+            font-size: 1.2em;
         }
         #rollBtn {
             top: 50vh;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 1em;
+            font-size: 1.2em;
             -webkit-transform: translateX(-50%);
             -moz-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
@@ -198,7 +198,7 @@
             top: 60vh;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 1em;
+            font-size: 1.2em;
             -webkit-transform: translateX(-50%);
             -moz-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
