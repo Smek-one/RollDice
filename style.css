@@ -9,23 +9,23 @@
         width: 100vw;
     }
     
-    #player-1-panel,
-    #player-2-panel {
+    #player-0-panel,
+    #player-1-panel {
         text-align: center;
         padding-top: 10vh;
         height: 100vh;
         float: left;
     }
     
-    #name-1,
-    #name-2 {
+    #name-0,
+    #name-1 {
         text-transform: uppercase;
         font-size: 3em;
         font-weight: 100;
     }
     
-    #globalScore-1,
-    #globalScore-2 {
+    #globalScore-0,
+    #globalScore-1 {
         font-size: 10em;
         font-weight: 100;
         color: #f21616;
@@ -118,21 +118,21 @@
             height: 100vh;
             width: 100vw;
         }
-        #player-1-panel,
-        #player-2-panel {
+        #player-0-panel,
+        #player-1-panel {
             text-align: center;
             padding-top: 10vh;
             height: 100vh;
             width: 50%;
         }
-        #name-1,
-        #name-2 {
+        #name-0,
+        #name-1 {
             text-transform: uppercase;
             font-size: 2em;
             font-weight: 100;
         }
-        #globalScore-1,
-        #globalScore-2 {
+        #globalScore-0,
+        #globalScore-1 {
             font-size: 5em;
             font-weight: 100;
             color: #f21616;
