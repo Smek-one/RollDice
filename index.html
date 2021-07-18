@@ -37,18 +37,39 @@
         <button id="newGameBtn"><i class="bi bi-plus-circle"></i>New Game</button>
         <button id="rollBtn"><i class="bi bi-arrow-repeat"></i>Roll dice</button>
         <button id="holdBtn"><i class="bi bi-box-arrow-in-down"></i>HoldBtn</button>
-    </div>
+        <!-- Button trigger modal -->
+        <!-- Button trigger modal -->
+        <button type="button" id="infoBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="bi bi-info-circle"></i>
+  </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ModalLabel">Règles du jeu</h5>
+
+                    </div>
+                    <div class="modal-body">
+                        Le jeu comprend 2 joueurs sur un seul et même écran. Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL). À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite. Le résultat
+                        d’un lancer est ajouté au ROUND. Lors de son tour, le joueur peut décider à tout moment de: - Cliquer sur l’option “Hold”, qui permet d’envoyer les points du ROUND vers le GLOBAL. Ce sera alors le tour de l’autre joueur. - Lancer
+                        le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour. Le premier joueur qui atteint les 100 points sur global gagne le jeu.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btnClose" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
-
-
-
-
-    <!--BOOTSTRAP JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!--MINE JS-->
-    <script src="script.js"></script>
+        <!--BOOTSTRAP JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!--MINE JS-->
+        <script src="script.js"></script>
 </body>
 
 </html>

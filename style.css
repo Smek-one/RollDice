@@ -107,6 +107,23 @@
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
     }
+    
+    #infoBtn {
+        top: 1vh;
+        color: #f21616;
+        left: 2%;
+        font-weight: 900;
+    }
+    
+    .btnClose {
+        background: #f21616;
+        color: #fff;
+        bottom: 1.5vh;
+    }
+    
+    #ModalLabel {
+        color: #f21616;
+    }
     /*MEDIAQUERIES*/
     
     @media screen and (max-width: 414px) {
