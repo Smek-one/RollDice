@@ -233,7 +233,7 @@ i {
     }
 }
 
-@media screen and (min-width: 667px) and (max-width: 736px) {
+@media screen and (min-width: 667px) and (max-width: 1791px) {
     body {
         margin: 0;
         height: 100vh;
