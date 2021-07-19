@@ -172,9 +172,9 @@
         .currentPanel {
             position: relative;
             margin: auto;
-            top: 30vh;
-            width: 90px;
-            height: 90px;
+            top: 40vh;
+            width: 100px;
+            height: 100px;
             background: #f21616;
             padding: 1vw;
             font-size: 1em;
@@ -187,7 +187,7 @@
             width: 80px;
             height: 80px;
             position: relative;
-            bottom: 70vh;
+            bottom: 65vh;
             left: 50%;
             transform: translateX(-50%);
         }

@@ -1,8 +1,5 @@
 let gamePlaying, roundScore, activePlayer, scores;
 
-
-
-
 //ROLL DICE
 document.getElementById('rollBtn').addEventListener('click', function() {
     if (gamePlaying) {
